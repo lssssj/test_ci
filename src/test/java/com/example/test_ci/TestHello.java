@@ -1,5 +1,6 @@
 package com.example.test_ci;
 
+import com.example.test_ci.utils.FastAdder;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -17,5 +18,12 @@ public class TestHello {
         int z = 10;
         int x = y + z;
         Assert.assertEquals(x, 30);
+    }
+
+    @Test
+    public void testFastAdd() {
+        int res = FastAdder.add(10, 20);
+        int expected = 10 + 20;
+        Assert.assertEquals(res, expected);
     }
 }
