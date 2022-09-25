@@ -12,4 +12,4 @@ jobs:
           git -C "${{github.workspace}}/${{github.event.repository.name}}" checkout ${{github.ref}}
       - name: java unit test
         run: | 
-          ./mvnw test
+          mvn test
