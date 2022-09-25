@@ -14,7 +14,7 @@ public class Rer
 
     public static void main(String[] args)
     {
-
+        System.out.println("jjj");
     }
 
     public static void func(String args, int main)
